@@ -1,0 +1,77 @@
+////////////////////
+////// MIXINS //////
+////////////////////
+
+vertical-align()
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+
+center()
+  margin: 0 auto
+  
+link(style)
+  border-bottom: 1px style $raspberry
+  
+fixed()
+  position: fixed
+  -webkit-transform: translateZ(0)
+  
+force-hwa()
+  -webkit-transform: translateZ(0)
+  
+clearfix()
+  &::after
+    clear: both
+    content: ""
+    display: table
+
+opacity(opacity)
+  filter: s("progid:DXImageTransform.Microsoft.Alpha(Opacity=%s)", opacity * 100) if support-for-ie
+  opacity: opacity
+  
+triangle(direction='up', size=10px, color=#000)
+  width: 0
+  height: 0
+  if direction == 'up'
+    border-left: size solid transparent
+    border-right: size solid transparent
+    border-bottom: size solid color
+  else if direction == 'down'
+    border-left: size solid transparent
+    border-right: size solid transparent
+    border-top: size solid color
+  else if direction == 'left'
+    border-top: size solid transparent
+    border-bottom: size solid transparent
+    border-right: size solid color
+  else if direction == 'right'
+    border-top: size solid transparent
+    border-bottom: size solid transparent
+    border-left: size solid color
+  
+
+// From Bourbon (SASS)
+  
+border-top-radius(val)
+  border-top-left-radius: val
+  border-top-right-radius: val
+  
+border-right-radius(val)
+  border-bottom-right-radius: val
+  border-top-right-radius: val
+  
+border-bottom-radius(val)
+  border-bottom-left-radius: val
+  border-bottom-right-radius: val
+  
+border-left-radius(val)
+  border-bottom-left-radius: val
+  border-top-left-radius: val
+  
+border-radius(val)
+  border-radius: val
+  
+box-sizing(box)
+  box-sizing: box
+  

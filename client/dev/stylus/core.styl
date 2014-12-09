@@ -1,0 +1,70 @@
+/**
+*
+* Project : 'Core'
+* Author  : Josh Meads - <joshmeads@me.com>
+* Year    : 2014
+* Version : v0.1.0
+*
+**/
+
+// Variables
+//--------------------------------  
+$pagewidth = 1024px
+
+
+
+// Global Options (true/false)
+//-----------
+@import 'vendor/globals'
+
+debug(false)
+normalize(true)
+
+// Packages below must be installed via Bower
+  // Frameworks
+  bootstrap(false)
+  kube(false)
+  
+  // Features
+  animatecss(false)
+  buttons(false)
+  
+  // Fonts/Icons (move/compile(gulp copy) 'bower/**/fonts' folder to stylus/fonts)
+  fontawesome(false)
+  
+
+
+// Colors
+//-----------
+@import 'base/colors'
+
+$primary-color = $black
+$secondary-color = $blue
+$text-color = $flat-asphalt
+$accent-color = $maroon
+$error-color = $red
+$success-color = $lime
+$selection-color = $red
+$link-color = $black
+$bg-color = $purewhite
+
+
+
+
+// Vendor (Third Party - Webfonts/Normalize.css/Bourbon/etc.)
+//--------------------------------
+@import 'vendor/webfonts'
+
+// Base (Colour Values/Mixins/Placeholders/Type)
+//--------------------------------
+@import 'base/typography'
+@import 'base/mixins'
+@import 'base/placeholders'
+@import 'base/base'
+
+// Theme (Page/Section styles)
+//--------------------------------
+@import 'theme/header'
+@import 'theme/main'
+@import 'theme/footer'
+@import 'theme/shame'

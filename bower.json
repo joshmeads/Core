@@ -1,0 +1,21 @@
+{
+  "name": "Core",
+  "version": "0.1.1",
+  "authors": [
+    "Josh Meads <joshmeads@me.com>"
+  ],
+  "description": "Core Project",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+  }
+}

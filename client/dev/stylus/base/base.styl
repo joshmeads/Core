@@ -1,0 +1,79 @@
+////////////////////
+/////// BASE ///////
+////////////////////
+
+// HTML Defaults
+*, *:before, *:after
+  box-sizing(border-box)
+  margin: 0
+  padding: 0
+  -webkit-margin-before: 0
+  -webkit-margin-after: 0
+
+*:focus 
+  outline: none
+
+html 
+  force-hwa()
+  max-width: 100%
+  font-size: 16px
+
+body 
+  font-size: 100%
+  line-height: 1.5
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  overflow-y: scroll
+
+input, button  -webkit-font-smoothing: antialiased 
+
+input, textarea color: $black box-sizing:border-box
+
+em 
+  font-style: italic
+
+strong 
+  font-style: bold
+  font-weight: $bold-fw
+
+hr 
+  border: solid $silver
+  border-width: 1px 0 0
+  margin: 10px 0 30px
+  height: 0px
+
+  clear: both
+
+a 
+  color: $link-color
+
+a:hover, a:focus 
+  
+ul, ol, dl 
+  list-style-type: none
+
+
+ol 
+  counter-reset: ol-counter
+
+
+ol > li 
+  position: absolute
+  left: -1em
+
+  content: counter(ol-counter)
+    counter-increment: ol-counter
+
+
+.clear 
+  clearfix()
+
+
+img 
+  -moz-user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+
+

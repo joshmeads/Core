@@ -1,0 +1,76 @@
+/////////////////////
+/// GLOBAL MIXINS ///
+/////////////////////
+
+debug(arg)
+  if arg == true
+    html
+
+    div
+      border: 1px solid green
+
+    [style], style
+      border: 5px solid yellow
+
+    style
+      border: block
+
+    img
+      border: 5px solid red
+
+    img[alt]
+      border-color: green
+
+    img[alt=""]
+      border-color: yellow
+
+    a
+      border: 5px solid yellow
+
+    a[title]
+      border-color: green
+
+    a[href="#"]
+      outline-color: yellow
+
+    a[target]
+      border-color: red
+
+    [class=""], [id=""]
+      border: 5px solid yellow
+      
+normalize(arg)
+  if arg == true
+    @import 'vendor/normalize'
+    
+
+// Frameworks    
+bootstrap(arg)
+  if arg == true
+    @import '../bower_components/bootstrap/dist/css/*.css';
+    
+kube(arg)
+  if arg == true
+    @import '../bower_components/kube-framework/css/kube.css';
+    
+
+// Features   
+animatecss(arg)
+  if arg == true
+    @import '../bower_components/animate.css/animate.css';
+
+buttons(arg)
+  if arg == true
+    @import '../bower_components/Buttons/css/buttons.css';
+
+
+// Fonts/Icons
+fontawesome(arg)
+  if arg == true
+    @import '../bower_components/fontawesome/css/font-awesome.css';
+    
+    
+
+
+
+
