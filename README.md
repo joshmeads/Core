@@ -11,6 +11,10 @@ Required:
 * Stylus - npm install -g stylus
 * Jade - npm install -g jade
 
+
+### To use run in terminal:
+Run npm install
+
 ```
   npm install
 ```
