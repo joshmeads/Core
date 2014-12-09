@@ -4,7 +4,12 @@ Core is blank project. Based on Gulp, Stylus and Jade.
 
 ## Getting Started
 
-Required: NodeJS, Gulp (npm install -g gulp), Bower (npm install -g bower), Stylus (npm install -g stylus), Jade (npm install -g jade)
+Required:
+*NodeJS - [http://nodejs.org/](http://nodejs.org/)
+*Gulp - npm install -g gulp
+*Bower - npm install -g bower
+*Stylus - npm install -g stylus
+*Jade - npm install -g jade
 
 ```
   npm install
